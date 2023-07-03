@@ -1,7 +1,82 @@
-/* .nnn{
-    display: flex;
+.iconoA{
+    width: 13vw;
+    height: 5vh;
 }
-.tablita {
+.navegadores{
+    text-decoration: none !important; 
+    border: solid 3px rgb(231, 57, 86);
+    border-radius: 20%;
+}
+.navegadores:hover{
+    background-color: rgb(3, 247, 226);
+    color: red;
+}
+.contenedor img{
+    width: 20vw;
+    height: 20vh;
+    padding: 5%;
+}
+.contenedor{
+    width: 20vw;
+    border: solid red 2px;
+}
+.precios-y-details{
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+}
+.precios-y-details a{
+    border: solid rebeccapurple 2px;
+    text-decoration: none;
+    margin-bottom: 2%;
+}
+.imagen-pie{
+    display: flex;
+    width: 3vw;
+    height: 3vh;
+}
+.carousel-imagenes{
+    margin-top: 0.5%;
+    height: 40vh;
+    width: 100%;
+}
+.carousel-imagenes img{
+    height: 40vh;
+    width: 100%;
+}
+.formu-contacto{
     display: flex;
     flex-direction: column;
-} */
+}
+.formu-contacto-m input{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 30vw;
+}
+.formu-contacto input{
+    width: 30vw;
+}
+.boton-{
+    margin-top: 0.5%;
+    margin-left: 25%;
+}
+.tabla{
+    margin-top: 3%;
+    margin-left: 15%;
+}
+.tabla th, td{
+    border: solid black 2px;
+    border-collapse: collapse;
+}
+.detalles{
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    width: 70%;
+    border: solid black 2px;
+}
+.detalles-image{
+    width: 30vw;
+}

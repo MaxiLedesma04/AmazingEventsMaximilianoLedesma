@@ -5,71 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past Events</title>
     <link rel="shortcut icon" href="../imgenes/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Diseño/diseño.css">
 </head>
 <body>
-    <nav>
-        <img src="../imgenes/amazing_brand.png" alt="Amazing_Brand_Logo">
-        <a href="../../index.html">Home</a>
-        <a href="../upcoming-ev/upcoming-events.html">Upcuming Events</a>
-        <a href="#">Past Evnts</a>
-        <a href="../contact/contact.html">Contact Us</a>
-        <a href="../stats/stats.html">Stats</a>
-    </nav>
-    <main>
-        <form action="">
-            <label for="category">category</label>
-            <input type="radio" id="category" name="first-categ">
-            <label for="category2">category2</label>
-            <input type="radio" id="category2" name="second-categ">
-            <label for="category3">category3</label>
-            <input type="radio" id="category3" name="third-category">
-            <label for="category4">category4</label>
-            <input type="radio" id="category4" name="four-category">
-        </form>
+    <nav class="d-flex p-2 justify-content-between border border-info">
+        <img class="iconoA" src="../imgenes/amazing_brand.png" alt="Amazing_Brand_Logo">
         <div>
-            <div>
+            <a class="navegadores" href="../../index.html">Home</a>
+            <a class="navegadores" href="../upcoming-ev/upcoming-events.html">Upcuming Events</a>
+            <a class="navegadores" href="#">Past Events</a>
+            <a class="navegadores" href="../contact/contact.html">Contact Us</a>
+            <a class="navegadores" href="../stats/stats.html">Stats</a>
+        </div>
+    </nav>
+    <div class="carousel-imagenes">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imgenes/optional_banner_5.jpg" class="d-block w-100" alt="banner-5">
+              </div>
+              <div class="carousel-item">
+                <img src="../imgenes/optional_banner_1.jpg" class="d-block w-100" alt="banner-1">
+              </div>
+              <div class="carousel-item">
+                <img src="../imgenes/optional_banner_2.jpg" class="d-block w-100" alt="banner-2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <main>
+        <form action="" class="p-4 d-flex">
+            <div class="px-4">
+                <label for="category">Food Fair</label>
+                <input type="radio" id="category" name="categ" value="first-categ">
+            </div>
+            <div class="px-4">
+                <label for="category2">Art Exhibition</label>
+                <input type="radio" id="category2" name="categ" value="second-categ">
+            </div>
+            <div class="px-4">
+                <label for="category3">Costume Party</label>
+                <input type="radio" id="category3" name="categ" value="third-category">
+            </div>
+            <div class="px-4">
+                <label for="category4">Music Concert</label>
+                <input type="radio" id="category4" name="categ" value="four-category">
+            </div>
+        </form>
+        <div class="d-flex justify-content-between px-4">
+            <div class="contenedor">
                 <img src="../imgenes/food_fair.jpg" alt="food-fair">
-                <H2>Festival of the collectivities</H2>
-                <h3>Enjoy your favorite dishes from different countries in a unique event for the whole family.</h3>
-                <div>
+                <div class="d-flex flex-column align-items-center">
+                    <H2>Festival of the collectivities</H2>
+                    <p>Enjoy your favorite dishes from different countries in a unique event for the whole family.</p>
+                </div>
+                <div class="precios-y-details">
                     <h4>$5</h4>
-                    <a href="">Details</a>
+                    <a href="../details/details.html">Details</a>
                 </div>
             </div>
-            <div>
+            <div class="contenedor">
                 <img src="../imgenes/outing_to_the_museum.jpg" alt="museum">
-                <H2>Art Exhibition</H2>
-                <h3>Let's go to the art museum for an incredible tour to learn about the largest dinosaurs.</h3>
-                <div>
+                <div class="d-flex flex-column align-items-center">
+                    <H2>Art Exhibition</H2>
+                    <p>Let's go to the art museum for an incredible tour to learn about the largest dinosaurs.</p>
+                </div>
+                <div class="precios-y-details">
                     <h4>$15</h4>
-                    <a href="">Details</a>
+                    <a href="../details/details.html">Details</a>
                 </div>
             </div>
-            <div>
+            <div class="contenedor">
                 <img src="../imgenes/marathon.jpg" alt="Marathon">
-                <H2>10K for life</H2>
-                <h3>Come and exercise, improve your health and lifestyle.</h3>
-                <div>
+                <div class="d-flex flex-column align-items-center">
+                    <H2>10K for life</H2>
+                    <p>Come and exercise, improve your health and lifestyle.</p>
+                </div>
+                <div class="precios-y-details">
                     <h4>$3</h4>
-                    <a href="">Details</a>
+                    <a href="../details/details.html">Details</a>
                 </div>
             </div>
-            <div>
+            <div class="contenedor">
                 <img src="../imgenes/books.jpg" alt="books">
-                <H2>School Book Fair</H2>
-                <h3>Bring your unused school book and bring the one you need.</h3>
-                <div>
+                <div class="d-flex flex-column align-items-center">
+                    <H2>School Book Fair</H2>
+                    <p>Bring your unused school book and bring the one you need.</p>
+                </div>
+                <div class="precios-y-details">
                     <h4>$1</h4>
-                    <a href="">Details</a>
+                    <a href="../details/details.html">Details</a>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <img src="../imgenes/facebook.png" alt="Facebook">
-        <img src="../imgenes/instagram.png" alt="Instagram">
-        <img src="../imgenes/whatsapp.png" alt="whatsapp">
-        <h6>Cohort 49</h6>
+    <footer class="d-flex justify-content-between border border-info mt-2">
+        <div class="imagen-pie">
+            <img src="../imgenes/facebook.png" alt="Facebook">
+            <img src="../imgenes/instagram.png" alt="Instagram">
+            <img src="../imgenes/whatsapp.png" alt="whatsapp">
+        </div>
+        <h6 class="fs-6">Cohort 49</h6>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 </html>

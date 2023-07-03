@@ -5,21 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stats</title>
     <link rel="shortcut icon" href="../imgenes/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Diseño/diseño.css">
 </head>
 <body>
-    <nav>
-        <img src="../imgenes/amazing_brand.png" alt="Amazing_Brand_Logo">
-        <a href="../../index.html">Home</a>
-        <a href="../upcoming-ev/upcoming-events.html">Upcuming Events</a>
-        <a href="../past-events/past-events.html">Past Evnts</a>
-        <a href="../contact/contact.html">Contact Us</a>
-        <a href="#">Stats</a>
+    <nav class="d-flex p-2 justify-content-between border border-info">
+        <img class="iconoA"  src="../imgenes/amazing_brand.png" alt="Amazing_Brand_Logo">
+        <div>
+            <a class="navegadores" href="../../index.html">Home</a>
+            <a class="navegadores" href="../upcoming-ev/upcoming-events.html">Upcuming Events</a>
+            <a class="navegadores" href="../past-events/past-events.html">Past Events</a>
+            <a class="navegadores" href="../contact/contact.html">Contact Us</a>
+            <a class="navegadores" href="#">Stats</a>
+        </div>
     </nav>
+    <div class="carousel-imagenes">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../imgenes/optional_banner_5.jpg" class="d-block w-100" alt="banner-5">
+              </div>
+              <div class="carousel-item">
+                <img src="../imgenes/optional_banner_1.jpg" class="d-block w-100" alt="banner-1">
+              </div>
+              <div class="carousel-item">
+                <img src="../imgenes/optional_banner_2.jpg" class="d-block w-100" alt="banner-2">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>    
     <main>
-        <table>
+        <table class="tabla">
             <thead>
               <tr>
-                <th>Events Statics</th>
+                <th colspan="3">Events Statics</th>
               </tr>
             </thead>
             <tbody>
@@ -29,13 +57,13 @@
                 <td>Events whith larger capacity</td>
               </tr>
               <tr>
-                <td>   </td>
-                <td>   </td>
-                <td>   </td>
+                <td contenteditable="true">   </td>
+                <td contenteditable="true">   </td>
+                <td contenteditable="true">   </td>
               </tr>
             </tbody>
             <thead>
-                <th>Upcoming events statics by category</th>
+                <th colspan="3">Upcoming events statics by category</th>
             </thead>
             <tbody>
                 <tr>
@@ -44,14 +72,14 @@
                     <td>Percentage of assistance</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
                 </tr>
             </tbody>
             <thead>
                 <tr>
-                    <th>Past events statics by category</th>
+                    <th colspan="3">Past events statics by category</th>
                 </tr>
             </thead>
             <tbody>
@@ -61,18 +89,23 @@
                     <td>Percentage of assistance</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
                 </tr>
             </tbody>
           </table>          
     </main>
-    <footer>
-        <img src="../imgenes/facebook.png" alt="Facebook">
-        <img src="../imgenes/instagram.png" alt="Instagram">
-        <img src="../imgenes/whatsapp.png" alt="whatsapp">
-        <h6>Cohort 49</h6>
+    <footer class="d-flex justify-content-between border border-info mt-2">
+        <div class="imagen-pie">
+            <img src="../imgenes/facebook.png" alt="Facebook">
+            <img src="../imgenes/instagram.png" alt="Instagram">
+            <img src="../imgenes/whatsapp.png" alt="whatsapp">
+        </div>
+        <h6 class="fs-6">Cohort 49</h6>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
