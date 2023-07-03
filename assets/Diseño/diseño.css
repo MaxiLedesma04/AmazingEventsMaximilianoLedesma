@@ -80,3 +80,43 @@
 .detalles-image{
     width: 30vw;
 }
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .iconoA{
+        width: 20vw;
+    }
+    .tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor{
+        width: 50vw;
+    }
+    .carousel-imagenes{
+        width: 100vw;
+    }
+    .items-form{
+        margin-left:0;
+        padding: 0;
+    }
+    .eleccion{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .tabla{
+        margin: 0 !important;
+    }
+    .detalles{
+        margin: 0 !important;
+        padding: 0!important;
+        width: 100% !important;
+    }
+    .detalles-image{
+        height: 40vh;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .tabla{
+        margin-left: 5% !important;
+    }
+}
