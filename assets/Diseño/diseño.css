@@ -1,34 +1,52 @@
+.imagen-fondo{
+    background-image: url(../imgenes/optional_banner_4.jpg);
+    background-position: center;
+}
 .iconoA{
     width: 13vw;
     height: 5vh;
 }
 .navegadores{
     text-decoration: none !important; 
-    border: solid 3px rgb(231, 57, 86);
+    border: solid #b2443a 3px ;
     border-radius: 20%;
+    color:  rgb(231, 57, 86);
+    -webkit-backdrop-filter: blur(400px);
+    backdrop-filter: blur(400px);
+    gap: 5%
 }
 .navegadores:hover{
-    background-color: rgb(3, 247, 226);
+    background: #afd7ce;;
     color: red;
 }
 .contenedor img{
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: contain;
     width: 20vw;
     height: 20vh;
-    padding: 5%;
+    border-radius: 30%;
 }
 .contenedor{
     width: 20vw;
-    border: solid red 2px;
+    -webkit-backdrop-filter: blur(400px);
+    backdrop-filter: blur(400px);
+    border: solid rgb(241, 162, 162) 1px;
+    border-radius: 10%;
 }
 .precios-y-details{
     display: flex;
     justify-content: center;
-    gap: 40%;
+    gap: 20%;
 }
 .precios-y-details a{
-    border: solid rebeccapurple 2px;
+    color: #b2443a;
+    border: solid #fa8072 2px;
     text-decoration: none;
     margin-bottom: 2%;
+}
+#piefinal{
+    border: solid rgb(241, 162, 162) 1px;
 }
 .imagen-pie{
     display: flex;
@@ -58,8 +76,9 @@
     width: 30vw;
 }
 .boton-{
-    margin-top: 0.5%;
-    margin-left: 25%;
+    width: 65vw;
+    display: flex;
+    justify-content: flex-end;
 }
 .tabla{
     margin-top: 3%;
@@ -80,7 +99,12 @@
 .detalles-image{
     width: 30vw;
 }
+
 @media only screen and (min-width: 320px) and (max-width: 767px){
+    #navegadors{
+        display: flex !important;
+        justify-content: center !important;
+    }
     .iconoA{
         width: 20vw;
     }
@@ -92,8 +116,10 @@
     .contenedor{
         width: 50vw;
     }
-    .carousel-imagenes{
-        width: 100vw;
+    .contenedor img{
+        padding-left: 3%;
+        width: 95%;
+        border-radius: 50%;
     }
     .items-form{
         margin-left:0;
@@ -113,6 +139,10 @@
     }
     .detalles-image{
         height: 40vh;
+    }
+    #formul{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px){

@@ -9,8 +9,8 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../Diseño/diseño.css">
 </head>
-<body>
-    <nav class="d-flex p-2 justify-content-between border border-info">
+<body class="imagen-fondo">
+    <nav class="d-flex p-2 justify-content-between flex-wrap" id="navegadors">
         <img class="iconoA" src="../imgenes/amazing_brand.png" alt="Amazing_Brand_Logo">
         <div>
             <a class="navegadores" href="../../index.html">Home</a>
@@ -44,7 +44,7 @@
           </div>
     </div>
     <main>
-            <form action="" class="d-flex flex-column align-items-center p-4">
+            <form action="" class="d-flex flex-column align-items-center pt-4">
                 <div class="formu-contacto">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name">
@@ -57,10 +57,13 @@
                     <label for="message">Message:</label>
                     <input type="text" id="message" name="Message">
                 </div>
-                <input class="boton-" type="button" value="Sumit">
+
             </form>
+            <div class="boton-">
+              <input type="button" value="Sumit">
+            </div>
     </main>
-    <footer class="d-flex justify-content-between border border-info mt-2">
+    <footer class="d-flex justify-content-between mt-2" id="piefinal">
         <div class="imagen-pie">
             <img src="../imgenes/facebook.png" alt="Facebook">
             <img src="../imgenes/instagram.png" alt="Instagram">

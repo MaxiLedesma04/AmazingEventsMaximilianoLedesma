@@ -10,14 +10,14 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/Diseño/diseño.css">
 </head>
-<body>
+<body class="imagen-fondo">
     <div class="otra-medida">
-        <nav class="d-flex p-2 justify-content-between border border-info">
+        <nav class="d-flex p-2 justify-content-between flex-wrap" id="navegadors">
             <img class="iconoA" src="./assets/imgenes/amazing_brand.png" alt="Amazing_Brand_Logo">
             <div>
                 <a class="navegadores" href="#">Home</a>
                 <a class="navegadores" href="./assets/upcoming-ev/upcoming-events.html">Upcuming Events</a>
-                <a class="navegadores" href="./assets/past-events/">Past Events</a>
+                <a class="navegadores" href="./assets/past-events/past-events.html">Past Events</a>
                 <a class="navegadores" href="./assets/contact/contact.html">Contact Us</a>
                 <a class="navegadores" href="./assets/stats/stats.html">Stats</a>
             </div>
@@ -28,7 +28,7 @@
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./assets/imgenes/optional_banner_5.jpg" class="d-block w-100" alt="banner-5">
+                    <img src="./assets/imgenes/optional_banner_5.jpg" class="d-block w-100 object-fit-cover" alt="banner-5">
                   </div>
                   <div class="carousel-item">
                     <img src="./assets/imgenes/optional_banner_1.jpg" class="d-block w-100" alt="banner-1">
@@ -47,7 +47,7 @@
                 </button>
               </div>
         </div>
-        <form action="" class="items-form p-4 d-flex">
+        <form action="" class="items-form p-4 d-flex" id="formul">
             <div class="eleccion px-4">
                 <label for="category">Food Fair</label>
                 <input type="radio" id="category" name="categ" value="first-categ">
@@ -64,9 +64,13 @@
                 <label for="category4">Music Concert</label>
                 <input type="radio" id="category4" name="categ" value="four-category">
             </div>
+            <div class="buscador">
+                <input type="search" id="search" name="search" placeholder="search">
+                <img src="./assets/imgenes/search-engine-optimization.png" alt="search">
+            </div>
         </form>
-        <div class="tarjetas d-flex justify-content-between px-4">
-            <div class="contenedor">
+        <div class="tarjetas d-flex justify-content-between flex-wrap container gap-2" id="contain-target">
+            <!-- <div class="contenedor">
                 <img src="./assets/imgenes/cinema.jpg" alt="cinema">
                 <div class="d-flex flex-column align-items-center">
                     <H2 class="fs-6">Avengers</H2>
@@ -111,10 +115,10 @@
                     <h4 class="fs-6">$3</h4>
                     <a href="./assets/details/details.html">Details</a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </main>
-    <footer class="d-flex justify-content-between border border-info mt-2">
+    <footer class="d-flex justify-content-between mt-2" id="piefinal">
         <div class="imagen-pie">
             <img src="./assets/imgenes/facebook.png" alt="Facebook">
             <img src="./assets/imgenes/instagram.png" alt="Instagram">
@@ -125,6 +129,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+        <script src="./data.js"></script>
+        <script src="./index.js"></script>
 </body>
 
 </html>
