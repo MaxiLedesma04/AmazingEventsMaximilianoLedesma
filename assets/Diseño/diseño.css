@@ -10,7 +10,8 @@
     text-decoration: none !important; 
     border: solid #b2443a 3px ;
     border-radius: 20%;
-    color:  rgb(231, 57, 86);
+    color:  rgb(12, 1, 2);
+    font-weight: 700;
     -webkit-backdrop-filter: blur(400px);
     backdrop-filter: blur(400px);
     gap: 5%
@@ -25,7 +26,7 @@
     object-fit: contain;
     width: 20vw;
     height: 20vh;
-    border-radius: 30%;
+    border-radius: 70%;
 }
 .contenedor{
     width: 20vw;
@@ -40,7 +41,9 @@
     gap: 20%;
 }
 .precios-y-details a{
-    color: #b2443a;
+    color: #0a0101;
+    font-weight: 600;
+    background-color: #f3a59e;
     border: solid #fa8072 2px;
     text-decoration: none;
     margin-bottom: 2%;
@@ -141,12 +144,18 @@
         height: 40vh;
     }
     #formul{
-        display: flex;
-        flex-direction: column;
+        display: flex !important;
+        flex-direction: column !important;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px){
     .tabla{
         margin-left: 5% !important;
     }
+    #formul{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+    }
+
 }
