@@ -1,7 +1,5 @@
-let containerPastEvents = document.getElementById("containerPast")
-
 const events = data.events
-
+let containerPastEvents = document.getElementById("containerPast")
 const days = data.currentDate
 
 function cardsPastev(array, place, date){
@@ -24,3 +22,4 @@ function cardsPastev(array, place, date){
     place.innerHTML = cardsPast
 }
 cardsPastev(events, containerPastEvents, days)
+
