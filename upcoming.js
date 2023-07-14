@@ -15,7 +15,7 @@ function cardsUpcom(array, place, date){
             </div>
             <div class="precios-y-details">
                 <h4>$ ${events.price}</h4>
-                <a href="../details/details.html">Details</a>
+                <a href="../details/details.html?parametro=${events._id}">Details</a>
             </div>
         </div>`
         }

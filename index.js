@@ -15,7 +15,7 @@ function cards(array, place){
         </div>
         <div class="precios-y-details">
             <h4>$${events.price}</h4>
-            <a href="./assets/details/details.html">Details</a>
+            <a href="./assets/details/details.html?parametro=${events._id}">Details</a>
         </div>
     </div>`
     }
