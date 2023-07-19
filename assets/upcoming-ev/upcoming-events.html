@@ -44,28 +44,15 @@
           </div>
     </div>
     <main>
-        <form action="" class="items-form p-4 d-flex flex-row-reverse" id="formul">
-            <!-- <div class="eleccion px-4">
-                <label for="category">Food Fair</label>
-                <input type="radio" id="category" name="categ" value="first-categ">
-            </div>
-            <div class="eleccion px-4">
-                <label for="category2">Art Exhibition</label>
-                <input type="radio" id="category2" name="categ" value="second-categ">
-            </div>
-            <div class="eleccion px-4">
-                <label for="category3">Costume Party</label>
-                <input type="radio" id="category3" name="categ" value="third-category">
-            </div>
-            <div class="eleccion px-4">
-                <label for="category4">Music Concert</label>
-                <input type="radio" id="category4" name="categ" value="four-category">
-            </div> -->
-            <div class="buscador">
-              <input type="search" id="search" name="search" placeholder="search">
-          </div>
+      <div class="d-flex flex-column-reverse mt-2 align-items-center flex-lg-row justify-content-md-around">
+        <div id="containerCheckBox" class="d-flex flex-column mt-3 mt-lg-0 flex-md-row text-md-center ">      
+        </div>
+        <form class="d-flex" role="search">
+          <input id="containerSreach" class="buscador-inicio form-control me-2" type="search" placeholder="Search"
+            aria-label="Search" />
         </form>
-        <div class="tarjetas d-flex justify-content-around flex-wrap container gap-2" id="containerupcoming">
+      </div>
+        <div class="tarjetas d-flex justify-content-around flex-wrap container gap-2" id="upcoming-js">
         </div>
     </main>
     <footer class="d-flex justify-content-between mt-2" id="piefinal">
@@ -79,7 +66,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-    <script src="../../data.js"></script>
-    <script src="../../upcoming.js"></script>
+    <script type="module" src="../../scripts/upcoming.js"></script>
 </body>
 </html>

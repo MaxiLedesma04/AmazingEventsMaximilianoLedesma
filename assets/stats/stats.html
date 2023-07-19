@@ -24,13 +24,13 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../imgenes/optional_banner_5.jpg" class="d-block w-100" alt="banner-5">
+                <img src="../imgenes/optional_banner_5.jpg" class="d-block w-100 object-fit-cover" alt="banner-5">
               </div>
               <div class="carousel-item">
-                <img src="../imgenes/optional_banner_1.jpg" class="d-block w-100" alt="banner-1">
+                <img src="../imgenes/optional_banner_1.jpg" class="d-block w-100 object-fit-cover" alt="banner-1">
               </div>
               <div class="carousel-item">
-                <img src="../imgenes/optional_banner_2.jpg" class="d-block w-100" alt="banner-2">
+                <img src="../imgenes/optional_banner_2.jpg" class="d-block w-100 object-fit-cover" alt="banner-2">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -57,9 +57,9 @@
                 <td>Events whith larger capacity</td>
               </tr>
               <tr>
-                <td contenteditable="true">   </td>
-                <td contenteditable="true">   </td>
-                <td contenteditable="true">   </td>
+                <td contenteditable="true" id="nomb">  </td>
+                <td contenteditable="true" id="nomb2">  </td>
+                <td contenteditable="true" id="nomb3">  </td>
               </tr>
             </tbody>
             <thead>
@@ -71,12 +71,9 @@
                     <td>Revenues</td>
                     <td>Percentage of assistance</td>
                 </tr>
-                <tr>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                </tr>
-            </tbody>
+                <tbody id="nomb2-1">
+                  
+                </tbody>
             <thead>
                 <tr>
                     <th colspan="3">Past events statics by category</th>
@@ -88,11 +85,8 @@
                     <td>Revenues</td>
                     <td>Percentage of assistance</td>
                 </tr>
-                <tr>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                </tr>
+                <tbody id="nomb3-1">
+                </tbody>
             </tbody>
           </table>          
     </main>
@@ -107,5 +101,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+    <script src="../../scripts/stats.js"></script>
 </body>
 </html>
