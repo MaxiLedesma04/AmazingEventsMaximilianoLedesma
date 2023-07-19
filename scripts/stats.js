@@ -57,12 +57,12 @@ fetch("https://mindhub-xj03.onrender.com/api/amazing")
         // console.log(revenues)
         assistanceProm += calculoPorcent (evento.estimate, evento.capacity)
     })
-    revenues = revenues
+    revenues = revenues.toLocaleString()
     console.log(revenues)
     assistanceProm = assistanceProm / eventosPorCategoria.length
     // console.log(assistanceProm)
     
-    tablaDos(contenedorUpUno,categoUpcom, revenues, assistanceProm)
+    tablaDos(contenedorUpUno,categoUpcom, revenues, assistanceProm.toFixed(2))
    })
 
 
@@ -72,13 +72,13 @@ fetch("https://mindhub-xj03.onrender.com/api/amazing")
     let eventosPorCategoriaPass = eventosPass.filter(eventoPassed => eventoPassed.category == categoPass)
 
     eventosPorCategoriaPass.forEach(evento =>{
-        revenuesPass += evento.assistance * evento.capacity
+        revenuesPass += evento.assistance * evento.price
         assistancePormPass += calculoPorcent(evento.assistance, evento.capacity)
     })
-    revenuesPass = revenuesPass
+    revenuesPass = revenuesPass.toLocaleString()
     console.log(revenuesPass)
     assistancePormPass = assistancePormPass / eventosPorCategoriaPass.length
-    tablaDos(contenedorPass, categoPass, revenuesPass, assistancePormPass)
+    tablaDos(contenedorPass, categoPass, revenuesPass, assistancePormPass.toFixed(2))
 
    })
 
@@ -106,36 +106,7 @@ function tablaUnoCapacidad(evento, htmlContain, porcentaje){
 function tablaDos(htmlContain, name, revenues, assistanceProm){
     htmlContain.innerHTML += 
      `<tr><td>${name}</td>
-      <td>${revenues}</td>
-      <td>${assistanceProm}</td></tr>`
+      <td>$${revenues}</td>
+      <td>${assistanceProm}%</td></tr>`
   }
 
-
-
-
-//   let objEventPast = arrayCatPast.map((categoria) => {
-//     let aux = {
-//         category: categoria
-//     }
-//     let catEvents = eventosPasados.filter(evento => evento.category == categoria)
-//     console.log(catEvents);
-//     const revenue = catEvents.reduce((acc, act) => acc + (act.price * act.assistance), 0)
-//     // console.log(revenue);
-//     aux.revenue = revenue
-//     let porcAssist = catEvents.reduce((acc, act) => acc + (act.assistance / (act.capacity / 100)), 0) / catEvents.length
-//     // console.log(porcAssist.toFixed(2));
-//     return aux
-// })
-// let objEventUp = arrayCatPast.map((categoria) => {
-//     let aux = {
-//         category: categoria
-//     }
-//     let catEvents = eventosFuturos.filter(evento => evento.category == categoria)
-//     console.log(catEvents);
-//     const revenue = catEvents.reduce((acc, act) => acc + (act.price * act.estimate), 0)
-//     console.log(revenue);
-//     aux.revenue = revenue
-//     let porcEstimate = catEvents.reduce((acc, act) => acc + (act.estimate / (act.capacity / 100)), 0) / catEvents.length
-//     console.log(porcEstimate.toFixed(2));
-//     return aux
-// })

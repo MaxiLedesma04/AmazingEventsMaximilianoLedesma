@@ -101,8 +101,9 @@ border: 1px solid rgba(255, 255, 255, 0.37);
     justify-content: flex-end;
 }
 .tabla{
-    margin-top: 3%;
-    margin-left: 15%;
+    width: 80vw;
+    margin-top: 3% !important;
+    margin-left: 10% !important;
 }
 .tabla th, td{
     border: solid black 2px;
